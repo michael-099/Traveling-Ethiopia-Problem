@@ -36,7 +36,17 @@ def uninformed_path_finder(cities, roads, start_city, goal_city, strategy):
         
     
     def DFS(start_city,goal_city,roads):
-        stack=[]
+        stack=[start_city]
+        while stack:
+            
+        
+        
+        
+       
+    
+      
+    
+        
         
             
             
@@ -48,7 +58,7 @@ def uninformed_path_finder(cities, roads, start_city, goal_city, strategy):
     if strategy=="BFS":
        BFS(start_city,roads,goal_city)
     else :
-        DFS()
+        DFS(DFS(start_city,goal_city,roads))
 
 
 if __name__ == "__main__":
@@ -62,4 +72,4 @@ if __name__ == "__main__":
     }
     print("hello")
 
-    uninformed_path_finder(cities,roads,"Bahir Dar","Gondar","BFS")
+    uninformed_path_finder(cities,roads,"Bahir Dar","Gondar","DFS")
