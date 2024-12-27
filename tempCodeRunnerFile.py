@@ -1,1 +1,1 @@
-Mekelle
+visualize_graph(cities, roads, path)
